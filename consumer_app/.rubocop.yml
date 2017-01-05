@@ -1,0 +1,40 @@
+
+Metrics/AbcSize:
+  Enabled: false
+  
+EndOfLine:
+  Enabled: false
+  
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'db/schema.rb'
+    - 'db/migrate/**/*'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/BlockComments:
+  Enabled: false
+
+Metrics/LineLength:
+  Description: 'Limit lines to 80 characters.'
+  StyleGuide: '#80-character-limits'
+  Enabled: false
+
+Style/StringLiterals:
+  Description: 'Checks if uses of quotes match the configured preference.'
+  StyleGuide: '#consistent-string-literals'
+  Enabled: false
+
+Metrics/BlockLength:
+  Description: 'Avoid long blocks with many lines.'
+  Enabled: false
+
+Style/Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false

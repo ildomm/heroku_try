@@ -1,0 +1,32 @@
+</br>
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">All events</div>
+    <div class="panel-body">
+      <table class="table table-condensed table-curved">
+        <thead >
+        <tr>
+          <th>#</th>
+          <th>email(s)</th>
+          <th>uuid</th>
+          <th>url</th>
+          <th>client_created_at</th>
+          <th>server_created_at</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @events.each{ |event|  %>
+            <tr>
+              <td scope="row"><%= event.id %></td>
+              <td><%= event.contacts.map {|contact| contact.email }.join(', ') %></td>
+              <td><%= event.uuid %></td>
+              <td><%= event.url %></td>
+              <td class="text-nowrap"><%= event.client_created_at %></td>
+              <td class="text-nowrap"><%= event.server_created_at %></td>
+            </tr>
+        <% } %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div> <!-- /container -->
