@@ -9,14 +9,22 @@ Things you may want to cover:
 * System dependencies
 	Redis
 	Mysql
+	
 * Configuration		
+
 	config/database.yml
+	
 		Database credentials		
+		
 * Database initialization
 	ruby bin/rake db:setup
+	
 	ruby bin/rake db:setup RAILS_ENV=test
+	
 * How to run the test suite
 	ruby bin/rspec
 * Services (job queues, cache servers, search engines, etc.)
+	Start application
+		run_server.bat
 	Start sidekiq service 
 		run_sidekiq.bat

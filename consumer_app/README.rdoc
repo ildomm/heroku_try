@@ -10,5 +10,11 @@ Things you may want to cover:
 * Configuration			
 * Database initialization
 * How to run the test suite
+
 	ruby bin/rspec
+	
 * Services (job queues, cache servers, search engines, etc.)
+
+	Start application
+	
+		run_server.bat
