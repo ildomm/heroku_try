@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   controller :contact do
     get 'contact' => 'contact#index'
     get 'contact/index' => 'contact#index'
@@ -9,5 +8,4 @@ Rails.application.routes.draw do
   controller :event do
     post 'event' => 'event#create'
   end
-
 end

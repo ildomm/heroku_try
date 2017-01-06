@@ -30,9 +30,7 @@ module BackendApp
     # config.i18n.default_locale = :de
     config.active_job.queue_adapter = :sidekiq
 
-    config.action_dispatch.default_headers.merge!({
-                                                      'Access-Control-Allow-Origin' => '*',
-                                                      'Access-Control-Request-Method' => '*'
-                                                  })
+    config.action_dispatch.default_headers.merge!({ 'Access-Control-Allow-Origin' => '*',
+                                                    'Access-Control-Request-Method' => '*' })
   end
 end

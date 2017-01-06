@@ -14,4 +14,3 @@ if ENV['RAILS_ENV'] != 'test'
   Sidekiq.redis { |conn| conn.flushdb }
   Sidekiq.redis { |conn| conn.flushall }
 end
-
