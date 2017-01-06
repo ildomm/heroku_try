@@ -16,5 +16,6 @@ test: &test
 
 production:
   <<: *default
+  adapter: postgresql
   database: rd_challenge_production
   password: <%= ENV['JCRAWLERNZ_DATABASE_PASSWORD'] %>
