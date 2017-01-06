@@ -17,3 +17,4 @@ Implementation details:
 Assumptions:
 	- Relations database isn't the best choice to this case of problem in real world, but is good enough to prove the point in this code challenge.
 	- To be able to handle a real world problem, receiving millions of events by minute, I would be opting by save this data in an nosql database, or even direct in flat files to later analysis.
+	- This actual implementation is only saving the basic information required, but in real world problem could be better persist too another details like IP, browser information.
