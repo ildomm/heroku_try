@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   root 'home#index'
 
   controller :home do
@@ -7,5 +6,4 @@ Rails.application.routes.draw do
     get 'home/about'
     get 'home/contact'
   end
-
 end

@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-
   def index
     # propositaly empty
   end
@@ -11,5 +10,4 @@ class HomeController < ApplicationController
   def contact
     # propositaly empty
   end
-
 end
