@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'contact#index'
+
   controller :contact do
     get 'contact' => 'contact#index'
     get 'contact/index' => 'contact#index'
