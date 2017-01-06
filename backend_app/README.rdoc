@@ -11,20 +11,17 @@ Things you may want to cover:
 	Mysql
 	
 * Configuration		
-
-	config/database.yml
-	
+	config/database.yml  
 		Database credentials		
 		
-* Database initialization
-	ruby bin/rake db:setup
-	
-	ruby bin/rake db:setup RAILS_ENV=test
+* Database initialization  
+	ruby bin/rake db:setup  
+	ruby bin/rake db:setup RAILS_ENV=test  
 	
 * How to run the test suite
 	ruby bin/rspec
 * Services (job queues, cache servers, search engines, etc.)
-	Start application <br/>
-	run_server.bat<br/>
-	Start sidekiq service<br/>
-	run_sidekiq.bat
+	Start application  
+	run_server.bat  
+	Start sidekiq service  
+	run_sidekiq.bat  
