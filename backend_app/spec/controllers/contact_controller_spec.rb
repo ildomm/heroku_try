@@ -55,10 +55,16 @@ RSpec.describe ContactController, type: :controller do
 
   describe "GET #index" do
     render_views
-    it "access contact/event list and have SUCCESS" do
+    it "access contact/event list and have SUCCESS list elements" do
       get :index
       expect(assigns(:events)).to eq(events)
+    end
+    it "access contact/event list and have SUCCESS status" do
+      get :index
       expect(response.status).to eq(200)
+    end
+    it "access contact/event list and have SUCCESS content" do
+      get :index
       expect(response.body).to include( "texte@would.com" )
     end
   end
